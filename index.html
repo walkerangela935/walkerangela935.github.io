@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#6d5dfc">
+<title>魅影直播-让每一次相遇都有值得停留的精彩</title>
+<meta name="description" content="魅影直播汇聚音乐现场、舞蹈才艺、游戏交流与生活分享，以清晰的频道分类、便捷的视频播放和贴心的观看工具，帮助你发现感兴趣的内容。浏览主题精选、收藏喜爱频道、记录观看灵感，了解直播观看与互动技巧；支持手机、平板及电脑访问，搭配日夜主题切换，让每一段闲暇时光更有趣。">
+<meta name="keywords" content="魅影直播">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="魅影直播">
+<meta property="og:title" content="魅影直播-让每一次相遇都有值得停留的精彩">
+<meta property="og:description" content="魅影直播汇聚音乐现场、舞蹈才艺、游戏交流与生活分享，以清晰的频道分类、便捷的视频播放和贴心的观看工具，帮助你发现感兴趣的内容。">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="./index.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "魅影直播",
+  "alternateName": "魅影直播",
+  "description": "魅影直播汇聚音乐现场、舞蹈才艺、游戏交流与生活分享，以清晰的频道分类、便捷的视频播放和贴心的观看工具，帮助你发现感兴趣的内容。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<style>
+:root {
+  --bg: #f7f8fc;
+  --bg-soft: #ffffff;
+  --bg-muted: #eef0f9;
+  --text: #1d2033;
+  --text-soft: #5a6076;
+  --line: #e3e6f2;
+  --brand: #6d5dfc;
+  --brand-soft: #efe9ff;
+  --accent: #ff7a59;
+  --shadow: 0 10px 30px rgba(29, 32, 51, 0.08);
+}
+html[data-theme="dark"] {
+  --bg: #10121c;
+  --bg-soft: #181b28;
+  --bg-muted: #212536;
+  --text: #eef0f8;
+  --text-soft: #a3a9bf;
+  --line: #2b3044;
+  --brand: #9b8cff;
+  --brand-soft: #2a2547;
+  --accent: #ff9478;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+a {
+  color: var(--brand);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.wrap {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: color-mix(in srgb, var(--bg-soft) 88%, transparent);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(10px);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 64px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.5px;
+}
+.logo:hover {
+  text-decoration: none;
+}
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--brand), var(--accent));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+.nav-toggle {
+  display: none;
+  border: 1px solid var(--line);
+  background: var(--bg-soft);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 7px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+nav.site-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav.site-nav a {
+  color: var(--text-soft);
+  font-size: 15px;
+}
+nav.site-nav a:hover {
+  color: var(--brand);
+  text-decoration: none;
+}
+.theme-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--line);
+  background: var(--bg-muted);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+.theme-btn:hover {
+  border-color: var(--brand);
+}
+.theme-icon {
+  font-size: 15px;
+  line-height: 1;
+}
+.hero {
+  padding: 68px 0 52px;
+  background: radial-gradient(circle at 15% 0%, var(--brand-soft), transparent 58%), radial-gradient(circle at 88% 12%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 52%);
+  border-bottom: 1px solid var(--line);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 44px;
+  align-items: center;
+}
+.hero h1 {
+  margin: 0 0 18px;
+  font-size: 40px;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+}
+.hero h1 span {
+  background: linear-gradient(120deg, var(--brand), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero p.lead {
+  margin: 0 0 26px;
+  color: var(--text-soft);
+  font-size: 17px;
+  max-width: 560px;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.btn {
+  display: inline-block;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--brand), #8f7bff);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+.btn-ghost {
+  background: var(--bg-soft);
+  border-color: var(--line);
+  color: var(--text);
+}
+.hero-card {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+.hero-card h2 {
+  margin: 0 0 14px;
+  font-size: 16px;
+  color: var(--text-soft);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.hero-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hero-card li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px dashed var(--line);
+  font-size: 15px;
+}
+.hero-card li:last-child {
+  border-bottom: none;
+}
+.hero-card li b {
+  font-weight: 600;
+}
+.hero-card li em {
+  font-style: normal;
+  color: var(--text-soft);
+  font-size: 13px;
+}
+section.block {
+  padding: 56px 0;
+}
+section.block.alt {
+  background: var(--bg-soft);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.section-head {
+  margin-bottom: 32px;
+  max-width: 720px;
+}
+.section-head h2 {
+  margin: 0 0 10px;
+  font-size: 27px;
+  line-height: 1.4;
+}
+.section-head p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 15.5px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+.card {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 22px 20px;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+  border-color: var(--brand);
+}
+.card .tag {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--brand);
+  background: var(--brand-soft);
+  border-radius: 999px;
+  padding: 3px 10px;
+  margin-bottom: 12px;
+}
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+.card p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 14.5px;
+}
+.topics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.topic {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.topic-cover {
+  height: 8px;
+  background: linear-gradient(90deg, var(--brand), var(--accent));
+}
+.topic-body {
+  padding: 20px;
+}
+.topic-body h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+.topic-body p {
+  margin: 0 0 14px;
+  color: var(--text-soft);
+  font-size: 14.5px;
+}
+.topic-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chip {
+  font-size: 12.5px;
+  color: var(--text-soft);
+  background: var(--bg-muted);
+  border-radius: 999px;
+  padding: 4px 11px;
+}
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+.article p {
+  margin: 0 0 16px;
+  color: var(--text-soft);
+  font-size: 15.5px;
+}
+.article h3 {
+  margin: 26px 0 10px;
+  font-size: 18px;
+  color: var(--text);
+}
+.article h3:first-child {
+  margin-top: 0;
+}
+.article ul {
+  margin: 0 0 16px;
+  padding-left: 20px;
+  color: var(--text-soft);
+  font-size: 15.5px;
+}
+.article li {
+  margin-bottom: 8px;
+}
+.steps {
+  counter-reset: step;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.steps li {
+  position: relative;
+  padding: 0 0 22px 44px;
+  border-left: 2px solid var(--line);
+  margin-left: 15px;
+}
+.steps li:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+.steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: -16px;
+  top: -2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.steps li b {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.steps li span {
+  color: var(--text-soft);
+  font-size: 14.5px;
+}
+.faq details {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 4px 18px;
+  margin-bottom: 12px;
+}
+.faq details[open] {
+  border-color: var(--brand);
+}
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15.5px;
+  padding: 14px 0;
+  list-style: none;
+  outline: none;
+}
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+.faq summary::after {
+  content: "+";
+  float: right;
+  color: var(--brand);
+  font-weight: 700;
+}
+.faq details[open] summary::after {
+  content: "−";
+}
+.faq p {
+  margin: 0 0 14px;
+  color: var(--text-soft);
+  font-size: 14.5px;
+}
+.table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--bg-soft);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 520px;
+  font-size: 14.5px;
+}
+caption {
+  caption-side: top;
+  text-align: left;
+  padding: 16px 18px 0;
+  color: var(--text-soft);
+  font-size: 14px;
+}
+th, td {
+  padding: 13px 18px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+th {
+  background: var(--bg-muted);
+  font-weight: 600;
+  color: var(--text);
+}
+tr:last-child td {
+  border-bottom: none;
+}
+td {
+  color: var(--text-soft);
+}
+footer.site-footer {
+  background: var(--bg-soft);
+  border-top: 1px solid var(--line);
+  padding: 40px 0 28px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 28px;
+}
+.footer-grid h4 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  color: var(--text);
+}
+.footer-grid p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 14px;
+}
+.footer-grid ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-grid li {
+  margin-bottom: 8px;
+}
+.footer-grid a {
+  color: var(--text-soft);
+  font-size: 14px;
+}
+.footer-bottom {
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--text-soft);
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .hero-grid,
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .topics {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 680px) {
+  .nav-toggle {
+    display: inline-block;
+  }
+  nav.site-nav {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--line);
+    display: none;
+    padding: 10px 20px 16px;
+  }
+  nav.site-nav.open {
+    display: block;
+  }
+  nav.site-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  nav.site-nav li {
+    width: 100%;
+  }
+  nav.site-nav a {
+    display: block;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero {
+    padding: 44px 0 36px;
+  }
+  .hero h1 {
+    font-size: 27px;
+  }
+  .hero p.lead {
+    font-size: 15.5px;
+  }
+  section.block {
+    padding: 40px 0;
+  }
+  .section-head h2 {
+    font-size: 22px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .theme-btn {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+  .logo {
+    font-size: 17px;
+  }
+  .header-inner {
+    min-height: 60px;
+  }
+  nav.site-nav {
+    top: 60px;
+  }
+}
+</style>
+<script src="https://cdn.staticsave.com/binglangwang/lidabao442.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark" aria-hidden="true">魅</span>
+      <span>魅影直播</span>
+    </a>
+    <nav class="site-nav" id="siteNav" aria-label="主导航">
+      <ul>
+        <li><a href="#channels">频道分类</a></li>
+        <li><a href="#topics">主题精选</a></li>
+        <li><a href="#favorites">收藏频道</a></li>
+        <li><a href="#guide">观看技巧</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">菜单</button>
+      <button type="button" class="theme-btn" id="themeToggle" aria-label="切换日夜主题">
+        <span class="theme-icon" id="themeIcon" aria-hidden="true">☀</span>
+        <span id="themeLabel">日间模式</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>让每一次相遇<br>都有<span>值得停留</span>的精彩</h1>
+        <p class="lead">魅影直播汇聚音乐现场、舞蹈才艺、游戏交流与生活分享。清晰的频道分类、顺畅的视频播放与贴心的观看工具，帮你在有限的闲暇里，更快找到真正感兴趣的内容。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#channels">浏览频道分类</a>
+          <a class="btn btn-ghost" href="#guide">查看观看技巧</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h2>今日内容一览</h2>
+        <ul>
+          <li><b>音乐现场</b><em>现场弹唱 · 民谣 · 器乐</em></li>
+          <li><b>舞蹈才艺</b><em>街舞 · 古典 · 编舞练习</em></li>
+          <li><b>游戏交流</b><em>实况对局 · 攻略复盘</em></li>
+          <li><b>生活分享</b><em>手作 · 美食 · 城市漫游</em></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="block" id="channels">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>清晰的频道分类，先找到方向再谈停留</h2>
+        <p>魅影直播按内容形态划分频道，避免在大量入口之间反复跳转。每个频道都围绕一种稳定的观看期待展开，进入之后即可按节奏挑选。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="tag">音乐现场</span>
+          <h3>听得见呼吸的现场</h3>
+          <p>弹唱、器乐、小型现场演出，以声音细节为核心，适合戴上耳机安静地听一段完整的曲目。</p>
+        </article>
+        <article class="card">
+          <span class="tag">舞蹈才艺</span>
+          <h3>看得清动作的练习</h3>
+          <p>街舞、古典舞与编舞练习室，镜头多停留在全身位置，方便跟练时对照步伐与节拍。</p>
+        </article>
+        <article class="card">
+          <span class="tag">游戏交流</span>
+          <h3>讲得明白的对局</h3>
+          <p>实况与复盘并行，主播会把关键决策讲清楚，适合边看边理解思路而非只看结果。</p>
+        </article>
+        <article class="card">
+          <span class="tag">生活分享</span>
+          <h3>聊得下去的生活</h3>
+          <p>手作、家常菜、城市漫游与日常闲聊，语速平缓，适合在做事时当作陪伴性的背景声。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt" id="topics">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>主题精选：把散落的内容串成一条线</h2>
+        <p>精选不是简单罗列热门，而是围绕一个具体主题，把风格相近的频道组织在一起。想连续看一段时间时，从主题进入往往比逐个频道试看更省心。</p>
+      </div>
+      <div class="topics">
+        <article class="topic">
+          <div class="topic-cover"></div>
+          <div class="topic-body">
+            <h3>深夜轻音乐时段</h3>
+            <p>以低速、低音量的器乐与弹唱为主，适合夜间阅读或入睡前的放松。主题内频道普遍减少高亮特效，画面更柔和。</p>
+            <div class="topic-meta">
+              <span class="chip">舒缓节奏</span>
+              <span class="chip">适合耳机</span>
+              <span class="chip">夜间友好</span>
+            </div>
+          </div>
+        </article>
+        <article class="topic">
+          <div class="topic-cover"></div>
+          <div class="topic-body">
+            <h3>周末舞房跟练</h3>
+            <p>围绕一段完整编舞展开，从分解动作到连段练习。适合想在家里活动身体、又希望有明确目标的观看者。</p>
+            <div class="topic-meta">
+              <span class="chip">分解教学</span>
+              <span class="chip">全身机位</span>
+              <span class="chip">可反复回看</span>
+            </div>
+          </div>
+        </article>
+        <article class="topic">
+          <div class="topic-cover"></div>
+          <div class="topic-body">
+            <h3>新手友好对局</h3>
+            <p>主播会在关键节点停下来解释判断依据，节奏偏慢但对理解友好，适合刚接触某款游戏、还在熟悉规则的阶段。</p>
+            <div class="topic-meta">
+              <span class="chip">思路讲解</span>
+              <span class="chip">节奏平稳</span>
+              <span class="chip">适合入门</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="favorites">
+    <div class="wrap two-col">
+      <div class="article">
+        <h3>收藏频道：把“下次还想看”留下来</h3>
+        <p>直播的时间不固定，靠记忆去找很容易错过。魅影直播提供收藏入口，把看对眼的频道留在自己的列表里，下一次打开时不必重新翻找。</p>
+        <p>收藏的价值不在数量，而在筛选。与其把见到的频道都存下来，不如只留那些风格稳定、更新规律、观看时不需要反复适应的几个。列表越干净，回访效率越高。</p>
+        <h3>记录观看灵感</h3>
+        <p>看到一句有共鸣的话、一段想学的动作、一道想试着做的菜，都可以随手记下来。灵感记录与频道分离保存，即使某天频道不再开播，记下的内容仍然属于自己。</p>
+        <ul>
+          <li>按主题归类，而不是按时间堆叠</li>
+          <li>只保留最近仍会回访的频道</li>
+          <li>每周清理一次，列表保持轻量</li>
+        </ul>
+      </div>
+      <div class="article">
+        <h3>播放体验：该调的设置先调好</h3>
+        <p>画面卡顿、声音忽大忽小，往往不是内容的问题，而是播放参数与当前网络、设备不匹配。花一分钟做基础设置，后续观看会顺畅很多。</p>
+        <p>移动网络下优先选择自适应清晰度，等画面稳定后再手动上调；使用耳机时适当降低系统音量并开启均衡，可以减轻长时间观看的疲劳感。</p>
+        <div class="table-scroll">
+          <table>
+            <caption>不同场景下的基础设置建议</caption>
+            <thead>
+              <tr>
+                <th scope="col">使用场景</th>
+                <th scope="col">清晰度</th>
+                <th scope="col">建议</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>移动数据</td>
+                <td>自适应</td>
+                <td>先保证连贯，再考虑提升画质</td>
+              </tr>
+              <tr>
+                <td>家庭无线</td>
+                <td>高清</td>
+                <td>距离路由器较远时可下调一档</td>
+              </tr>
+              <tr>
+                <td>电脑有线</td>
+                <td>最高</td>
+                <td>大屏观看时优先保证稳定性</td>
+              </tr>
+              <tr>
+                <td>夜间观看</td>
+                <td>不限</td>
+                <td>开启夜间主题并降低屏幕亮度</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt" id="guide">
+    <div class="wrap two-col">
+      <div>
+        <div class="section-head">
+          <h2>观看与互动的基础技巧</h2>
+          <p>把流程理顺，观看就会变成一件不需要思考的事。</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <b>先定目的，再选入口</b>
+            <span>想听声音去音乐现场，想跟练去舞蹈才艺，想陪伴感去生活分享。目的明确时不必浏览全部频道。</span>
+          </li>
+          <li>
+            <b>用主题代替逐个试看</b>
+            <span>从主题精选进入，能一次性接触到风格接近的多个频道，减少反复切换的时间成本。</span>
+          </li>
+          <li>
+            <b>把稳定的留下来</b>
+            <span>试看之后只收藏真正会回访的频道，避免收藏列表变成另一个需要清理的负担。</span>
+          </li>
+          <li>
+            <b>调好画质与声音</b>
+            <span>按当前网络与设备调整清晰度和音量，夜间开启夜间主题，减少长时间观看的不适。</span>
+          </li>
+          <li>
+            <b>互动保持分寸</b>
+            <span>发言围绕内容本身，尊重主播与其他观看者的节奏，让交流停留在轻松的范围里。</span>
+          </li>
+        </ol>
+      </div>
+      <div class="article">
+        <h3>多端访问，衔接不中断</h3>
+        <p>魅影直播适配手机、平板与电脑。手机适合碎片时间随手打开，平板适合跟练与长时间观看，电脑则在大屏与多任务之间更从容。</p>
+        <p>在不同设备之间切换时，收藏与灵感记录保持同步，不必重新整理一遍列表。外出用手机留下标记，回到电脑前继续看，衔接是连续的。</p>
+        <h3>日夜主题切换</h3>
+        <p>白天光线充足时，浅色主题的对比更清晰；夜间或光线较暗的环境下，深色主题能显著降低屏幕亮度刺激。页面右上角的按钮可以随时切换，选择会被记住，下次打开时保持上次的偏好。</p>
+        <p>切换主题不会影响正在浏览的内容位置，也不需要重新加载页面，适合在傍晚自然过渡到夜间观看状态。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block faq" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>常见问题</h2>
+        <p>关于浏览、收藏与播放的几个高频疑问。</p>
+      </div>
+      <details>
+        <summary>第一次使用，应该从哪个入口开始？</summary>
+        <p>建议先浏览频道分类，确认自己更偏向哪一类内容，再从主题精选进入具体的频道。如果不确定，可以从主题精选里选一个与当下情境接近的时段，例如夜间或周末。</p>
+      </details>
+      <details>
+        <summary>收藏的频道会一直保留吗？</summary>
+        <p>收藏保存在自己的列表中，可随时移除。列表只影响个人的浏览效率，不会因频道内容更新而自动清空。建议定期整理，保留近期仍会回访的频道。</p>
+      </details>
+      <details>
+        <summary>画面出现卡顿怎么办？</summary>
+        <p>先将清晰度调整为自适应，等待画面稳定；若仍然卡顿，可检查当前网络是否被其他设备占用，或切换到更靠近路由器的位置。电脑端可尝试关闭占用带宽的后台程序。</p>
+      </details>
+      <details>
+        <summary>日夜主题切换后为什么会保持？</summary>
+        <p>主题选择会保存在本地，重新打开页面时沿用上次的设置。如需恢复默认，再次点击右上角按钮切回日间模式即可。</p>
+      </details>
+      <details>
+        <summary>在手机上看到一半，可以换到电脑继续吗？</summary>
+        <p>可以。收藏与灵感记录在不同设备间保持同步，在电脑上用同一账号查看收藏列表即可接续浏览。观看进度与具体播放位置以设备端实际记录为准。</p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>魅影直播</h4>
+        <p>汇聚音乐现场、舞蹈才艺、游戏交流与生活分享，以清晰的频道分类与便捷的播放工具，帮助你发现感兴趣的内容，让每一段闲暇时光更有趣。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#channels">频道分类</a></li>
+          <li><a href="#topics">主题精选</a></li>
+          <li><a href="#favorites">收藏频道</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>使用帮助</h4>
+        <ul>
+          <li><a href="#guide">观看技巧</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#top">返回顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>魅影直播 · 让每一次相遇都有值得停留的精彩</span>
+      <span>支持手机、平板及电脑访问</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var toggle = document.getElementById("themeToggle");
+  var label = document.getElementById("themeLabel");
+  var icon = document.getElementById("themeIcon");
+  var navToggle = document.getElementById("navToggle");
+  var nav = document.getElementById("siteNav");
+  var storageKey = "meiying-theme";
+
+  function applyTheme(theme) {
+    root.setAttribute("data-theme", theme);
+    var dark = theme === "dark";
+    if (label) {
+      label.textContent = dark ? "夜间模式" : "日间模式";
+    }
+    if (icon) {
+      icon.textContent = dark ? "☾" : "☀";
+    }
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) {
+      meta.setAttribute("content", dark ? "#10121c" : "#6d5dfc");
+    }
+  }
+
+  var saved = null;
+  try {
+    saved = window.localStorage.getItem(storageKey);
+  } catch (err) {
+    saved = null;
+  }
+
+  if (!saved) {
+    var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    saved = prefersDark ? "dark" : "light";
+  }
+  applyTheme(saved);
+
+  if (toggle) {
+    toggle.addEventListener("click", function () {
+      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      applyTheme(next);
+      try {
+        window.localStorage.setItem(storageKey, next);
+      } catch (err) {
+        return;
+      }
+    });
+  }
+
+  if (navToggle && nav) {
+    navToggle.addEventListener("click", function () {
+      var open = nav.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      navToggle.textContent = open ? "关闭" : "菜单";
+    });
+    nav.addEventListener("click", function (event) {
+      if (event.target.tagName === "A" && nav.classList.contains("open")) {
+        nav.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+        navToggle.textContent = "菜单";
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>
